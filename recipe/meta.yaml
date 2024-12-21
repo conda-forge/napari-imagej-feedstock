@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<=3.11.0
+    - python >=3.9,<3.13.0
     - setuptools >=61.2
     - pip
   run:
-    - python >=3.8,<=3.11.0
-    - confuse
+    - python >=3.9,<3.13.0
+    - confuse >=2.0.0
     - imglyb >=2.1.0
     - jpype1 >=1.4.1
     - labeling >=0.1.12
@@ -30,7 +30,9 @@ requirements:
     - numpy
     - pandas
     - pyimagej >=1.4.1
-    - scyjava >=1.8.1
+    - scyjava >=1.9.1
+    - superqt >=0.7.0
+    - xarray <2024.10.0
     - qtconsole !=5.4.2
     - typing_extensions !=4.6.0
 
