@@ -1,13 +1,13 @@
 {% set name = "napari-imagej" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 69f1dffc8d39197f09b64e351797f661634f2f718cc999519a7d253cf3901c86
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: f443049db56d90c9cc79b4a7acfed8b6fcd4b750d43c32899ed62884b871aa88
 
 build:
   noarch: python
